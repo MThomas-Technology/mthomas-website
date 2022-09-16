@@ -62,10 +62,25 @@ export default {
     }
   },
   methods: {
+    encode (data) {
+      return Object.keys(data)
+        .map(
+          key => `${encodeURIComponent(key)}=${encodeURIComponent(data[key])}`
+        )
+        .join("&");
+    },
     submit() {
       this.$v.$touch()
       if (!this.$v.$invalid) {
-        console.log('valid!');
+        this.$axios.post('/',
+          this.encode({
+            'form-name': 'homepage-contact',
+            ...this.form
+          }),
+          {
+            header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+          }
+        );
         this.submitted = true;
       }
     }
