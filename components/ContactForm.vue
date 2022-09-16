@@ -3,9 +3,8 @@
     <form
       @submit.prevent="submit"
       name="homepage"
-      data-netlify="true"
-      data-netlify-honeypot="bot-field"
     >
+      <input type="hidden" name="form-name" value="homepage">
       <div class="inline">
         <div class="input-wrap" :class="{ 'input-wrap--error': $v.form.name.$error }">
           <input id="name" name="name" type="text" v-model.trim="$v.form.name.$model">
@@ -79,7 +78,7 @@ export default {
       if (!this.$v.$invalid) {
         this.$axios.post('/',
           this.encode({
-            'form-name': 'homepage-contact',
+            'form-name': 'homepage',
             ...this.form
           }),
           {
