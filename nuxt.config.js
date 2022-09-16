@@ -18,16 +18,24 @@ export default {
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: [],
+  css: ['~/assets/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ['~/plugins/vuelidate'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+  buildModules: [
+    '@nuxtjs/style-resources',
+  ],
+
+  styleResources: {
+    scss: ['./assets/variables.scss'],
+    // Hoists the "@use" imports. Applies only to "sass", "scss" and "less". Default: false.
+    hoistUseStatements: true
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
@@ -35,6 +43,8 @@ export default {
     '@nuxtjs/axios',
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
+    // https://www.npmjs.com/package/vue-scrollto
+    'vue-scrollto/nuxt'
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
