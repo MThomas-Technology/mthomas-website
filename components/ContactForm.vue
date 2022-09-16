@@ -1,6 +1,11 @@
 <template>
   <div>
-    <form @submit.prevent="submit">
+    <form
+      @submit.prevent="submit"
+      name="homepage"
+      data-netlify="true"
+      data-netlify-honeypot="bot-field"
+    >
       <div class="inline">
         <div class="input-wrap" :class="{ 'input-wrap--error': $v.form.name.$error }">
           <input id="name" name="name" type="text" v-model.trim="$v.form.name.$model">
