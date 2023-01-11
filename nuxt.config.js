@@ -11,8 +11,18 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Technical and web development services for charities and NGOs.',
+      },
       { name: 'format-detection', content: 'telephone=no' },
+      { name: 'og:type', content: 'website' },
+      { name: 'og:title', content: 'M Thomas Technology' },
+      { name: 'og:description', content: 'Technical and web development services for charities and NGOs.' },
+      { name: 'og:image', content: '/m-thomas-logo-white.png' },
+      { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
