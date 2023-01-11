@@ -9,23 +9,54 @@
           <h1>
             I’m a <span class="highlight">technologist</span> and
             <span class="highlight">full-stack developer</span> with 10 years
-            experience,
-            specialised in working with charities and <span class="highlight">
-          not-for-profit organisations</span>.
+            experience, specialised in working with charities and
+            <span class="highlight"> not-for-profit organisations</span>.
           </h1>
-          <MButton label="Read more about me" @click.native="readMore = !readMore"/>
+          <MButton
+            label="Read more about me"
+            @click.native="readMore = !readMore"
+          />
         </div>
       </div>
       <div class="about-me-more">
         <TransitionSlideToggle>
           <div class="more-about-me" v-show="readMore">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam fermentum eros vel faucibus commodo. Cras facilisis libero quis felis imperdiet, a tristique ante lacinia. Morbi egestas, orci ac dapibus tincidunt, nunc sem posuere tellus, ut tristique nibh dui id erat. Nam nulla est, euismod ac arcu vel, feugiat feugiat quam. Vestibulum eu aliquam massa. Ut a lacus dictum, tincidunt nunc nec, porta velit. Sed lobortis turpis nec dolor dapibus, eu pellentesque purus mattis. In nisl neque, molestie ac sollicitudin convallis, pulvinar in lacus. Mauris feugiat turpis purus, ac luctus metus sodales porttitor. Quisque quis orci quis diam sollicitudin dapibus vel et metus. Vivamus et ultrices sem, ac fringilla dolor. Donec consequat ante nec odio blandit feugiat. Nullam eget vulputate enim. Duis quam diam, finibus vel erat eget, eleifend dignissim risus. Ut placerat ligula in nunc dignissim, ac blandit erat malesuada. Aliquam interdum convallis nibh, commodo sollicitudin purus finibus nec.</p>
-
-            <p>In vel gravida nibh. Duis rutrum consectetur nulla sed ornare. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Integer eu nisi hendrerit felis aliquam aliquam. Fusce aliquam at eros sollicitudin vehicula. In dignissim quam felis. In tincidunt dui sit amet imperdiet tempor.</p>
-
-            <p>Proin in orci auctor massa varius varius. Aenean sit amet vestibulum nunc. Proin volutpat gravida metus vitae volutpat. Donec scelerisque arcu ac odio cursus accumsan. Etiam maximus accumsan nunc non varius. Praesent ornare sem lacus, at condimentum dui pulvinar at. Proin maximus libero erat, sit amet viverra libero molestie nec. Etiam orci sem, lobortis eget laoreet ut, elementum ut nulla. Nulla felis est, consequat vitae diam vel, euismod pellentesque sapien. Etiam in purus arcu. Nam quis bibendum tellus. Sed leo nunc, elementum ut varius vitae, ultrices non justo. Aenean venenatis, tortor eget ultricies mollis, ante eros lobortis ligula, eu luctus elit risus sed diam. In egestas dui leo, sit amet consectetur urna euismod sit amet. Fusce nec felis risus.</p>
+            <p>
+              I've been working professionally as a Web Developer since 2012 and
+              I first started working with charities and NGOs back in 2017 when,
+              during the course of my contracting, I started working with
+              <a href="https://forwardaction.uk" target="_blank"
+                >Forward Action</a
+              >. I worked there for the next 5 years until 2022, leading the
+              technology team, collaborating directly with clients and digital
+              strategists to deliver technology and campaigns that mobilised
+              hundreds of thousands of supporters, raised millions of £s and
+              drove real-world change.
+            </p>
+            <p>
+              Over the years, I've developed a passion for using technology as a
+              tool for driving positive real-world change and using my technical
+              skills to help organisations achieve their mission.
+            </p>
+            <p>
+              In late 2022, I decided to return to freelancing, focusing on
+              providing services to charities and NGOs, so that I can support a
+              wider range of organisations for a wider range of applications.
+              You can read more details about my work experience on my
+              <a
+                href="https://www.linkedin.com/in/michael-thomas-817a58108/"
+                target="_blank"
+                >LinkedIn</a
+              >.
+            </p>
           </div>
         </TransitionSlideToggle>
+      </div>
+      <div class="badges">
+        <img
+          src="/Technology-Partner.png"
+          alt="Engaging Networks Technology partner badge"
+        />
       </div>
     </div>
   </section>
@@ -33,20 +64,20 @@
 
 <script>
 export default {
-  name: "AboutMe",
+  name: 'AboutMe',
   data() {
     return {
-      readMore: false
+      readMore: false,
     }
-  }
-};
+  },
+}
 </script>
 
 <style scoped lang="scss">
 @import '../assets/mixins';
 
 .about-me {
-  padding: 60px 0;
+  padding: 60px 0 40px;
   width: 85%;
   margin: 0 auto;
   @media (max-width: $smallBreakpoint) {
@@ -101,7 +132,25 @@ export default {
 }
 
 .more-about-me {
-  margin-top: 20px;
+  margin-top: 50px;
   font-size: 18px;
+
+  @media (max-width: $smallBreakpoint) {
+    margin-top: 30px;
+  }
+}
+
+.badges {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 60px;
+
+  @media (max-width: $smallBreakpoint) {
+    justify-content: flex-start;
+  }
+}
+
+.badges img {
+  width: 90px;
 }
 </style>

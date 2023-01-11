@@ -1,7 +1,7 @@
 <template>
   <section id="services">
     <div class="container">
-      <h3 class="section-title">Here are some of the way I can help</h3>
+      <h3 class="section-title">My Services</h3>
       <ServicesTabs />
     </div>
   </section>

@@ -4,7 +4,7 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'mthomas.tech',
+    title: 'M Thomas Technology | Technical and web development services',
     htmlAttrs: {
       lang: 'en',
     },
@@ -21,20 +21,18 @@ export default {
   css: ['~/assets/main.scss'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vuelidate'],
+  plugins: ['~/plugins/vuelidate', '~/plugins/vue-easy-lightbox.js'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [
-    '@nuxtjs/style-resources',
-  ],
+  buildModules: ['@nuxtjs/style-resources'],
 
   styleResources: {
     scss: ['./assets/variables.scss'],
     // Hoists the "@use" imports. Applies only to "sass", "scss" and "less". Default: false.
-    hoistUseStatements: true
+    hoistUseStatements: true,
   },
 
   // Modules: https://go.nuxtjs.dev/config-modules
@@ -44,7 +42,7 @@ export default {
     // https://go.nuxtjs.dev/content
     '@nuxt/content',
     // https://www.npmjs.com/package/vue-scrollto
-    'vue-scrollto/nuxt'
+    'vue-scrollto/nuxt',
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios

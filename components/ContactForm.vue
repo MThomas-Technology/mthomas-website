@@ -121,7 +121,7 @@ export default {
     padding-top: 9px;
     padding-left: 10px;
     width: calc(100% - 2px);
-    background-color: white;
+    //background-color: white;
     border-radius: 5px 5px 0 0;
     pointer-events: none;
   }

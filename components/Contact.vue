@@ -4,7 +4,7 @@
       <div class="form-container">
         <h3 class="section-title">Get in touch</h3>
         <p class="lead">
-          Just fill out the form below, or send me an email to
+          Just fill out the form below, or send an email to
           <a
             href="mailto:michael@mthomas.tech?subject=Website enquiry"
             target="_blank"
