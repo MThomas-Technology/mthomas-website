@@ -21,7 +21,7 @@ export default {
       { name: 'og:type', content: 'website' },
       { name: 'og:title', content: 'M Thomas Technology' },
       { name: 'og:description', content: 'Technical and web development services for charities and NGOs.' },
-      { name: 'og:image', content: '/m-thomas-logo-white.png' },
+      { name: 'og:image', content: '/mthomas-logo-white.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
