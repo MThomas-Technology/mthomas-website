@@ -76,7 +76,7 @@ export default {
   background-size: 200% 100%;
   @media (max-width: $mediumBreakpoint) {
     text-align: center;
-    padding: 10px 16px;
+    padding: 10px 12px;
     transition: none;
     margin: 5px;
     border-radius: 5px;
