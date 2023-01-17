@@ -6,14 +6,11 @@
           'services-title': true,
           active: service === activeService,
         }"
-        v-for="service in services"
+        v-for="(service, i) in services"
         :key="service.slug"
-        @click="activeService = service"
+        @click="$store.commit('main/setActiveService', i)"
       >
         <h5>{{ service.title }}</h5>
-        <!-- <div class="services-description">
-          <span>{{ service.description }}</span>
-        </div> -->
       </div>
     </div>
     <div class="service-content">
@@ -27,13 +24,16 @@ export default {
   name: 'ServicesTabs',
   data() {
     return {
-      activeService: null,
       services: [],
     }
   },
+  computed: {
+    activeService() {
+      return this.services[this.$store.state.main.activeService]
+    },
+  },
   async mounted() {
     this.services = await this.$content('services').sortBy('order').fetch()
-    this.activeService = this.services[0]
   },
 }
 </script>

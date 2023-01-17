@@ -1,7 +1,7 @@
 <template>
   <footer>
     <div class="container">
-      <span>Michael Thomas | &copy; {{ new Date().getFullYear() }}</span>
+      <span>Michael Thomas &copy; {{ new Date().getFullYear() }} | P.IVA 12732590968</span>
     </div>
   </footer>
 </template>

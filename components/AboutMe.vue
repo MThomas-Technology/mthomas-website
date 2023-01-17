@@ -7,7 +7,7 @@
         </div>
         <div class="about-me-right">
           <h1>
-            I’m a <span class="highlight">technologist</span> and
+            I’m a <span class="highlight">consultant</span> and
             <span class="highlight">full-stack developer</span> with 10 years
             experience, specialised in working with charities and
             <span class="highlight"> not-for-profit organisations</span>.
@@ -39,7 +39,7 @@
               skills to help organisations achieve their mission.
             </p>
             <p>
-              In late 2022, I decided to return to freelancing, focusing on
+              Now, in 2023, I have decided to return to freelancing, focusing on
               providing services to charities and NGOs, so that I can support a
               wider range of organisations for a wider range of applications.
               You can read more details about my work experience on my

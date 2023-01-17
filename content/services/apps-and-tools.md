@@ -1,5 +1,5 @@
 ---
-title: Apps and APIs
+title: Apps and Tools
 order: 2
 images:
   - {
@@ -34,14 +34,18 @@ images:
     }
 ---
 
-# Apps and APIs
+# Apps and Tools
 
-For when you need something custom, I can build a solution that does exactly what you need, such as:
+I specialise in building custom web-based applications, microsites and tools to help organisations reach their goals. I have a wide range of experience in developing a variety of applications, including:
 
-- A custom interactive application to support your campaign
-- API integrations to pass data between your various systems
-- Admin and reporting tools
+- Interactive pages such as quizzes, maps and surveys to engage with exisiting supporters, recruit new supporters and spread awareness.
+- Tools to connect your supporters with your services.
+- Custom admin and reporting tools.
+- Tools for publishing online campaigns and donation pages.
+- API integrations to sync and pass data between your various pages and systems.
 
-I have a wide range of experience with building custom solutions - from working with the Mailchimp API to building a fully custom online advocacy platform.
+Whether you need to streamline an internal process or you're looking to engage with your supporters in a new way, I can help.
+
+**Get in touch, using the contact form at the bottom of this page, to discuss your project.**
 
 <image-gallery :images="images"></image-gallery>
