@@ -2,7 +2,11 @@
   <div>
     <div class="thumbnails">
       <div class="thumbnail" v-for="(img, i) in images" :key="img.src">
-        <img :src="img.src" :alt="img.alt" @click="show(i)" />
+        <img
+          :src="require(`~/assets/${img.src}`)"
+          :alt="img.alt"
+          @click="show(i)"
+        />
       </div>
     </div>
 
