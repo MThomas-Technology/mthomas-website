@@ -1,9 +1,9 @@
 <template>
   <div>
     <div class="thumbnails">
-      <div class="thumbnail" v-for="(img, i) in images" :key="img.src">
+      <div class="thumbnail" v-for="(img, i) in imgs" :key="img.src">
         <img
-          :src="require(`~/assets/${img.src}`)"
+          :src="img.src"
           :alt="img.alt"
           @click="show(i)"
         />
@@ -14,7 +14,7 @@
       escDisabled
       moveDisabled
       :visible="visible"
-      :imgs="images"
+      :imgs="imgs"
       :index="index"
       @hide="handleHide"
     >
@@ -36,6 +36,13 @@ export default {
       visible: false,
       index: 0,
     }
+  },
+  computed: {
+    imgs() {
+      return this.images.map((i) => {
+        return { ...i, src: require(`~/assets/${i.src}`) }
+      })
+    },
   },
   methods: {
     show(i) {

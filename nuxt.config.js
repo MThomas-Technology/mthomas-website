@@ -4,7 +4,8 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'M. Thomas Technology | Technical consulting and web development services',
+    title:
+      'M. Thomas Technology | Technical consulting and web development services',
     htmlAttrs: {
       lang: 'en',
     },
@@ -20,7 +21,11 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       { name: 'og:type', content: 'website' },
       { name: 'og:title', content: 'M Thomas Technology' },
-      { name: 'og:description', content: 'Technical consulting and web development services for charities and NGOs.' },
+      {
+        name: 'og:description',
+        content:
+          'Technical consulting and web development services for charities and NGOs.',
+      },
       { name: 'og:image', content: '/mthomas-logo-white.png' },
       { name: 'twitter:card', content: 'summary_large_image' },
     ],
@@ -37,7 +42,7 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: ['@nuxtjs/style-resources'],
+  buildModules: ['@nuxtjs/style-resources', '@nuxtjs/imagemin'],
 
   styleResources: {
     scss: ['./assets/variables.scss'],

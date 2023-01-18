@@ -3,27 +3,27 @@ title: Templates and Pages
 order: 1
 images:
   - {
-      src: 'reprieve-petition.png',
+      src: 'reprieve-petition.jpg',
       alt: 'Petition page for Reprieve',
       title: 'Engaging Networks petition page for Reprieve (Project by Forward Action)',
     }
   - {
-      src: 'tcs-donation.png',
+      src: 'tcs-donation.jpg',
       alt: "Donation page for The Children's Society",
       title: "Engaging Networks petition page for The Children's Society (Project by Forward Action)",
     }
   - {
-      src: 'reprieve-donation.png',
+      src: 'reprieve-donation.jpg',
       alt: 'Donation page for Reprieve',
       title: 'Engaging Networks donation page template for Reprieve (Project by Forward Action)',
     }
   - {
-      src: 'fft-christmas.png',
+      src: 'fft-christmas.jpg',
       alt: 'Freedom From Torture christmas shop gifts page',
       title: 'Freedom From Torture christmas shop built on top of an Engaging Networks donation page as a custom application. (Project by Forward Action)',
     }
   - {
-      src: 'fft-christmas2.png',
+      src: 'fft-christmas2.jpg',
       alt: 'Freedom From Torture Christmas shop checkout page',
       title: 'Cart page of the Freedon From Torture Christmas shop (Project by Forward Action)',
     }
